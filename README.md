@@ -20,7 +20,4 @@
 <a href="https://github.com/eznj">
   <img align="center" width="49%" src="./github-habits.svg" />
 </a>
-<a href="https://github.com/eznj">
-    <img align="center" width="49%" src="./achievements.svg" />
-</a>
 
