@@ -9,7 +9,7 @@
 
 ![Static Badge](https://img.shields.io/badge/stay%20inspired%20-&-blue)
 ![Static Badge](https://img.shields.io/badge/make%20things-green)
-![Static Badge](https://img.shields.io/badge/XO,NJ-pink)
+![Static Badge](https://img.shields.io/badge/XO,NJ-red)
 
 <br>
 
