@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="eznj-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 1
+                0 1 0 0 0
+                0 0 0 0.8 0" result="glowColor"/>
+      <feMerge>
+        <feMergeNode in="glowColor"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#020617"/>
+
+  <rect x="12" y="12" width="776" height="176" fill="none" stroke="#1f2937" stroke-width="2"/>
+
+  <g fill="#64748b" font-family="monospace" font-size="20">
+    <text x="28" y="38">[</text>
+    <text x="52" y="38">BOOT</text>
+    <text x="130" y="38">]</text>
+
+    <text x="720" y="170">[ OK ]</text>
+  </g>
+
+  <g font-family="monospace" font-size="14" fill="#0f766e" opacity="0.4">
+    <text x="80"  y="70">0x93F2 &amp; 0x7A1C | 0b101101</text>
+    <text x="80"  y="95">fn boot() -&gt; Result&lt;(),Err&gt; { ... }</text>
+    <text x="80" y="120">while (entropy &lt; threshold) { scramble(); }</text>
+    <text x="80" y="145">hash = sha256("EZNJ" + salt);</text>
+
+    <animate attributeName="opacity"
+             values="0.15;0.4;0.2;0.35;0.15"
+             dur="4s"
+             repeatCount="indefinite"/>
+  </g>
+
+  <rect x="20" y="-200" width="760" height="40" fill="#f9fafb" opacity="0.0">
+    <animate attributeName="y"
+             from="-200" to="200"
+             begin="0.3s"
+             dur="2s"
+             repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+             values="0;0.18;0"
+             begin="0.3s"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </rect>
+
+  <g font-family="monospace" font-size="72" text-anchor="middle">
+    <!-- Phase 1 -->
+    <text x="400" y="120" fill="#22c55e" opacity="1">
+      %X_9
+      <animate attributeName="opacity"
+               from="1" to="0"
+               begin="0s" dur="0.35s"
+               fill="freeze"/>
+    </text>
+
+    <text x="400" y="120" fill="#22c55e" opacity="0">
+      3z_n
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="0.35s" dur="0.15s"
+               fill="freeze"/>
+      <animate attributeName="opacity"
+               from="1" to="0"
+               begin="0.65s" dur="0.25s"
+               fill="freeze"/>
+    </text>
+
+    <text x="400" y="120" fill="#22c55e" opacity="0">
+      E7NJ
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="0.9s" dur="0.15s"
+               fill="freeze"/>
+      <animate attributeName="opacity"
+               from="1" to="0"
+               begin="1.15s" dur="0.25s"
+               fill="freeze"/>
+    </text>
+  </g>
+
+  <g font-family="monospace" text-anchor="middle">
+    <text x="400" y="120" font-size="80"
+          fill="url(#eznj-gradient)"
+          opacity="0"
+          filter="url(#glow)">
+      EZNJ
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="1.3s" dur="0.4s"
+               fill="freeze"/>
+      <animateTransform attributeName="transform"
+                        type="scale"
+                        additive="sum"
+                        values="1;1.05;0.98;1"
+                        begin="1.3s"
+                        dur="0.6s"
+                        fill="freeze"/>
+    </text>
+
+    <g font-size="80" fill="#22c55e" opacity="0.0">
+      <text x="400" y="120">
+        EZNJ
+        <animate attributeName="opacity"
+                 values="0;0.8;0"
+                 begin="1.35s" dur="0.18s"
+                 fill="freeze"/>
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          values="-5,0;6,0;-3,0;0,0"
+                          begin="1.35s"
+                          dur="0.18s"
+                          fill="freeze"/>
+      </text>
+
+      <text x="400" y="120">
+        EZNJ
+        <animate attributeName="opacity"
+                 values="0;0.5;0"
+                 begin="1.5s" dur="0.22s"
+                 fill="freeze"/>
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          values="4,0;-4,0;2,0;0,0"
+                          begin="1.5s"
+                          dur="0.22s"
+                          fill="freeze"/>
+      </text>
+    </g>
+  </g>
+
+  <g font-family="monospace" font-size="12" fill="#6b7280">
+    <text x="32" y="172">/dev/eznj &gt; decoding identity... [complete]</text>
+  </g>
+</svg>
+
