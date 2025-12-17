@@ -1,7 +1,3 @@
-![name](./name.svg)
-
-<hr>
-<br>
 
 <p>This is a personal account that is unrelated to professional work. This account is focused around open-source and occasional personal projects.</p>
 
