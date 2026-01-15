@@ -2,7 +2,7 @@ name: Metrics
 permissions:
   contents: write
 on:
-  schedule: [{cron: "0 * * * *"}]  # Runs hourly
+  schedule: [{cron: "0 */12 * * *"}]  # Runs hourly
   workflow_dispatch:
   push:
     branches:
